@@ -1,0 +1,470 @@
+/* Paleta de Colores-Adobe-Color
+    /* Color Theme Swatches in Hex 
+    .header-1-hex { color: #4B89BF; }
+    .header-2-hex { color: #5E9ABF; }
+    .header-3-hex { color: #70732F; }
+    .header-4-hex { color: #8A8C3E; }
+    .header-5-hex { color: #D9C5B4; }
+    extra                  #867B77
+
+    /* Color Theme Swatches in RGBA 
+    .header-1-rgba { color: rgba(75, 137, 191, 1); }
+    .header-2-rgba { color: rgba(94, 154, 191, 1); }
+    .header-3-rgba { color: rgba(112, 115, 47, 1); }
+    .header-4-rgba { color: rgba(138, 140, 62, 1); }
+    .header-5-rgba { color: rgba(217, 197, 180, 1); }
+
+    /* Color Theme Swatches in HSLA
+    .header-1-hsla { color: hsla(207, 47, 52, 1); }
+    .header-2-hsla { color: hsla(202, 43, 55, 1); }
+    .header-3-hsla { color: hsla(62, 41, 31, 1); }
+    .header-4-hsla { color: hsla(61, 38, 39, 1); }
+    .header-5-hsla { color: hsla(27, 32, 77, 1); }
+Paleta de Colores*/
+
+/** Variables Globales **/
+:root
+{
+    --blue:#4B89BF;
+    --ligth-blue:#5E9ABF;
+    --green:#70732F;
+    --ligth-green:#8A8C3E;
+    --ligth-brown:#D9C5B4;
+    --brown:#867B77;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+/** Reusables **/
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.justificar-texto
+{
+    text-align: justify;
+}
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+.blank
+{
+    color: #ffffff;
+}
+body
+{
+    background-color: var(--ligth-brown);
+}
+
+/** Header **/
+.site-header {
+    background-color: var(--ligth-blue);
+    padding: 1rem 0rem 1rem 0rem;
+}
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 0rem;
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1 {
+    color: #ffffff;
+    background-color: var(--blue);
+    padding-bottom: 2rem;
+    max-width: 45rem;
+    max-height: 0rem;
+    line-height: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7rem;
+    font-size: 40px;
+}
+.barra {
+    padding-top: 0rem;
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/** Navegacion **/
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 2.2rem;
+    display: inline-flexbox;
+    padding: 0px 0px 0px 0px;
+    margin:0px;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.2rem; 
+        margin-right: 1rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.navegacion a:hover {
+    color: var(--blue);
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+/*Nosotros*/
+.historia{
+    background-color: var(--brown);
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: #ffffff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/*Contacto*/
+.contacto{
+    margin: 20px 20px 20px 20px;
+    padding-top: 250px;
+    color:#ffffff;
+    background-color: var(--brown);
+}
+
+/*** Testimoniales **/
+.testimonial {
+    background-color: orange;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+    margin: 20px 20px 20px 20px;
+}
+.testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+.testimonial  p {
+    text-align: right;
+}
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../IMG/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono {
+    text-align: center;
+    background-color: var(--brown);
+}
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.icono h3 {
+    text-transform: uppercase;
+}
+
+/** Botones **/
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+n:hover {
+    cursor: pointer;
+}
+.boton-verde {
+    background-color: var(--ligth-green);
+}
+.boton-blue {
+    background-color:var(--blue);
+}
+.botoonreg {
+    color: VAR(--brown);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    text-align: center;
+    outline: 3px solid var(--blue);
+    display: block;
+    flex: 0 0 100%;
+}
+/*
+input[type="submit"] {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+*/
+
+/** Main **/
+.brown
+{
+    background-color: var(--brown);
+}
+@media (min-width: 768px) {
+    .contenido-main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.Imagen-Main {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+/*from*/
+
+
+form#trofeo {
+margin: auto;
+background: var(--brown);
+color: White;
+font-size: 22px;
+padding:50px;
+width: 450px;
+border:solid 5px var(--b);
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+
+form#trofeo input{
+font-size:15px;
+background: white;
+border:solid 1px transparent;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+float: right;
+margin-right: 15px;
+width: 200px;
+}
+
+form#trofeo ol li {
+line-height: 25px;
+list-style: none;
+}
+
+form#trofeo [required]{
+border:solid 1px transparent;
+}
+
+input:required {
+outline: 1px solid transparent;
+}
+
+
+/** Anuncios **/
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+.anuncio {
+    border: 1px solid black;
+    background-color: var(--brown);
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.contenido-anuncio {
+    padding: 1.5rem;
+    text-align: center
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p  {
+    margin: 0;
+    color: #ffffff;
+}
+.precio {
+    color: #71B100;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*
+.iconos-caracteristicas {
+    align-content: center;
+    list-style: none;
+    display: flex;                                   
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+    background-color: #F4EBE5;
+}
+.iconos-caracteristicas li {
+    display: flex;
+}
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+.iconos-caracteristicas p {
+    color: black;
+}
+*/
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nosotros
+{
+    padding: 50px 50px 500px 100px;
+    width: 1280px;
+    height: 720px;
+}
+
+/** Footer **/
+.site-footer {
+    background-color: var(--ligth-blue);
+    margin: 0;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}

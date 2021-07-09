@@ -1,0 +1,66 @@
+
+.casa{
+	width:100%;
+	height:auto;
+	display:inline-block;
+	background-color:transparent;
+	margin-top:10px;
+	font-size:20px;
+	border:1px solid gray;
+}
+
+.casa > img{
+	width:450px;	
+}
+
+
+.principal{
+	width:90%;
+	max-width:1200px;
+	margin:auto;
+}
+
+
+p.precio{
+	font-size:30px;
+	text-align:center;
+}
+
+p.fecha{
+	text-align:center;
+}
+p.idcasa{
+	text-align:center;
+}
+
+.titulo_boton {
+  margin-top:10px;
+  float:right;
+  padding:15px;  
+  background-color:#e6e6e6;
+  width:100px;
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
+  color:black;
+}
+ a {
+text-decoration: none;
+} 
+
+table.ventab{
+	margin:center;
+	text-align:center;
+	width:100%;
+	max-width:1024px;
+}
+
+input.inid{
+	width:30px;
+}
+
+tr.encabezado {
+	background-color:#8ABC3E;
+	color:#fff;
+}
+
